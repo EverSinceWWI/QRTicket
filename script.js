@@ -50,7 +50,8 @@ function bodyOnLoad() {
   var randomCol = Math.floor(Math.random() * (8-0) + 0);
   var randomTicket = Math.floor(Math.random() * (6-124) + 124);
   var randomQueue = Math.floor(Math.random() * (3-42) + 42);
-  var randomT = Math.floor(Math.random() * (8-0) + 0);
+  // var randomT = Math.floor(Math.random() * (8-0) + 0);
+  var randomT = 8;
 
    document.body.style.backgroundColor = services[randomT].color;
    document.getElementById("num").innerHTML=services[randomT].letter+randomTicket;
