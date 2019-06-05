@@ -49,8 +49,8 @@ var  services = {
 function bodyOnLoad() {
   var randomTicket = Math.floor(Math.random() * (6-124) + 124);
   var randomQueue = Math.floor(Math.random() * (3-42) + 42);
-  var randomService = Math.floor(Math.random() * (8-0) + 0);
-  // var serviceSel = 8;
+  // var randomService = Math.floor(Math.random() * (8-0) + 0);
+  var serviceSel = 8;
 
    document.body.style.backgroundColor = services[randomService].color;
    document.getElementById("num").innerHTML=services[randomService].letter+randomTicket;
