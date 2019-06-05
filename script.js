@@ -47,14 +47,12 @@ var  services = {
 }
 
 function bodyOnLoad() {
-  var randomCol = Math.floor(Math.random() * (8-0) + 0);
   var randomTicket = Math.floor(Math.random() * (6-124) + 124);
   var randomQueue = Math.floor(Math.random() * (3-42) + 42);
-  // var randomT = Math.floor(Math.random() * (8-0) + 0);
-  var randomT = 8;
+  var serviceSel = 8;
 
-   document.body.style.backgroundColor = services[randomT].color;
-   document.getElementById("num").innerHTML=services[randomT].letter+randomTicket;
-   document.getElementById("ticketType").innerHTML=services[randomT].name.toUpperCase();
+   document.body.style.backgroundColor = services[serviceSel].color;
+   document.getElementById("num").innerHTML=services[serviceSel].letter+randomTicket;
+   document.getElementById("ticketType").innerHTML=services[serviceSel].name.toUpperCase();
    document.getElementById("ticketRemaining").innerHTML=randomQueue+" people remaining";
 }
