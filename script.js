@@ -52,8 +52,8 @@ function bodyOnLoad() {
   // var randomService = Math.floor(Math.random() * (8-0) + 0);
   var serviceSel = 8;
 
-   document.body.style.backgroundColor = services[randomService].color;
-   document.getElementById("num").innerHTML=services[randomService].letter+randomTicket;
-   document.getElementById("ticketType").innerHTML=services[randomService].name.toUpperCase();
+   document.body.style.backgroundColor = services[serviceSel].color;
+   document.getElementById("num").innerHTML=services[serviceSel].letter+randomTicket;
+   document.getElementById("ticketType").innerHTML=services[serviceSel].name.toUpperCase();
    document.getElementById("ticketRemaining").innerHTML=randomQueue+" people remaining";
 }
